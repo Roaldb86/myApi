@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: myapi-deployment
+  name: myapi-deployment
+  namespace: myapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapi
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: myapi
+    spec:
+      containers:
+      - image: roaldb86/myapi:latest
+        name: myapi
+        resources: {}
+status: {}
