@@ -17,7 +17,7 @@ spec:
         app: myapi
     spec:
       containers:
-      - image: roaldb86/myapi:latest
+      - image: roaldb86/myapi:latest-amd64
         name: myapi
         resources: {}
 status: {}
